@@ -2,9 +2,6 @@
 <html lang="<?php echo Theme::lang() ?>">
 <head>
 <?php include(THEME_DIR_PHP.'head.php'); 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 ?>
 </head>
 <body>
