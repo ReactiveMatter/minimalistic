@@ -1,0 +1,1 @@
+console.log("Minimalistic theme JS loaded");
