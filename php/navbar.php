@@ -9,6 +9,12 @@
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav">
 		<li>
+			<a class="muted-link" href="">ABCD</a>
+		</li>
+		<li>
+			<a class="muted-link" href="">ABCD</a>
+		</li>
+		<li>
 			<a class="muted-link search-link" href="<?=$base.'search/'?>">Search</a>
 		</li>
 		</ul>
