@@ -8,6 +8,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	font-size: 18px;
+	color:#222;
 }
 
 .row, .col
@@ -20,18 +22,17 @@ body {
 
 .container
 {
-	max-width: 700px;
+	max-width: 900px;
 	margin: auto auto;
 }
-
-.navbar
+.navbar, footer.footer
 {
 	background-color: whitesmoke;
-	border-bottom: 1px solid #eee;
+	box-shadow: 0px 0px 1px 0px;
 	padding: unset;
 	display: flex;
 	flex-direction: column;
-
+	width: 100%;
 }
 
 .navbar .container
@@ -52,13 +53,13 @@ body {
 
 .navbar a, .navbar-nav a.nav-link
 {
-	padding: 0.75em;
+	padding: 0.75rem;
 	display: inline-block;
 }
 
 .navbar-nav a.nav-link
 {
-	padding-left: 0em;
+	padding-left: 0rem;
 }
 
 .menu-toggle
@@ -69,64 +70,74 @@ body {
 
 .search-icon
 {
-	font-size: 1rem; 
+	font-size: 1em; 
 	color:#6c757d;
-	padding: 0.75em;
+	padding: 0.75rem;
 	line-height: 1.5;
 }
 
+.main ul, .main ol, .main p
+{
+	margin-top:1rem;
+	margin-bottom:1rem;
+}
+
+.main li 
+{
+	margin-top:0.25rem;
+	margin-bottom:0.25rem;
+}
 
 
-section {
+.main section {
 	padding: 150px 0;
 }
 
-img {
+.main img {
 	max-width: 100%;
 }
 
 
-pre, code {
+.main pre, .main code {
 	background: #f8f8f8;
 	color: #333;
 }
 
-pre {
+.main pre {
 	border-left: 2px solid #ccc;
 	padding: 10px;
 }
 
-code {
+.main code {
 	display: inline-block;
-	padding: 0 0.5em;
-	line-height: 1.4em;
+	padding: 0 0.5rem;
+	line-height: 1.4rem;
 	border-radius: 3px;
 }
 
-table {
+.main table {
 	empty-cells: show;
 	border: 1px solid #cbcbcb;
 	width: 100%;
-	font-size: 0.9em;
 	margin-bottom: 1rem;
 }
 
-thead {
+.main thead {
 	background-color: #e0e0e0;
 	color: #000;
 	text-align: left;
 	vertical-align: bottom;
 }
 
-tr {
+.main tr {
 	display: table-row;
 	vertical-align: inherit;
 	border-color: inherit;
 }
 
-th, td 
+.main th, .main td 
 {
-	padding: 0.5em 0.75em !important;
+	padding: 0.5rem 0.75rem !important;
 }
 
 /*th:first-child, td:first-child
@@ -139,22 +150,22 @@ th:last-child, td:last-child
 	padding-right: 0 !important;
 }*/
 
-h1.title,
-h2.title {
+.main h1.title,
+.main h2.title {
 	font-size: 2.3rem;
 }
 
-h1
+.main h1
 {
 	font-size: 1.7rem;
 }
 
-h2
+.main h2
 {
-	font-size: 1.4em;
+	font-size: 1.4rem;
 }
 
-h3
+.main h3
 {
 	font-size: 1em;
 	font-weight: bold;
@@ -162,10 +173,10 @@ h3
 
 .page .details
 {
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 }
 
-blockquote {
+.main blockquote {
         padding: 10px 20px;
         margin: 0 0 20px 20px;
         border-left: 5px solid #eee;
@@ -179,28 +190,9 @@ img.nav-svg-icon {
 	padding-bottom: 2px;
 }
 
-.nav-link {
-	font-size: 0.9em;
-}
-
-/* Footer */
-footer {
-	width: 100%;
-	font-size: 0.9em;
-	display: flex;
-	flex: column;
-}
-
-.footer
-{
-	background-color: whitesmoke;
-	border-top: 1px solid #eee;
-	font-size: 1em;
-}
-
 .footer-text
 {
-	padding: 0.75em;
+	padding: 0.75rem;
 }
 
 .mini-logo {
@@ -214,7 +206,7 @@ footer {
 }
 
 .plugin-label {
-	font-size: 1em;
+	font-size: 1rem;
 	text-transform: uppercase;
 }
 
@@ -227,8 +219,8 @@ footer {
 {
 	width: 100%;
 	border: 1px solid #dee2e6;
-	padding:0.45em 0.9em;
-	border-radius: 0.1em;
+	padding:0.45rem 0.9rem;
+	border-radius: 0.1rem;
 	/* font-size: 0.9em; */
 }
 
@@ -255,24 +247,23 @@ footer {
 
 .page, .page-list
 {
-	padding: 0.75em;
+	padding: 0.75rem;
 }
 
 .page-empty
 {
-	padding: 1em;
+	padding: 1rem;
 }
 
-.page-results
+.main table.page-results
 {
 	border: none;
-	font-size: 1rem;
-	margin-left: -0.75em;
-	margin-right: -0.75em;
-	width: calc(100% + 1.5em);
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+	width: calc(100% + 1.5rem);
 }
 
-.page-results thead
+.main table.page-results thead
 {
 	background-color: #fff0 !important;
 	color:#0009;
@@ -308,7 +299,7 @@ footer {
 
 .paginator-link
 {
-	padding: 0em 0.75em;
+	padding: 0rem 0.75rem;
 }
 .head-date
 {
@@ -352,10 +343,106 @@ footer {
 	display: inline-block;
 }
 
+/*Boxes custom*/
+.box
+{   
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background: #fafafa;
+    border: 1px solid #a2a9b1;
+    padding:1rem;
+    box-sizing:border-box;
+    border-radius: 3px;
+}
+.box div.center
+{ width:unset;}
+.box>*:first-child
+{
+    margin-top:0;
+}
+.box>*:last-child
+{
+    margin-bottom:0;
+}
+.box.red
+{
+    background: #ffebee;
+    border: 1px solid #d33;
+}
+
+.box.blue
+{
+    background: #e3f2fd;
+    border: 1px solid #386c96;
+}
+
+.box.green
+{
+    background: #d5fdf4;
+    border: 1px solid #14866d;
+}
+
+.box.yellow
+{
+    background: #fffde7;
+    border: 1px solid #fbc02d;
+}
+.box.pink
+{
+    background: #fce4ec;
+    border: 1px solid #ec407a;
+}
+.box.purple
+{
+    background: #f3e5f5;
+    border: 1px solid #ab47bc;
+}
+
+/* Side boxes */
+
+img.side
+{
+    float:right;
+    margin:0.5rem 1rem;
+    margin-right: 0rem;
+}
+
+.box.side
+{
+    width:300px;
+    margin-top:0;
+    margin-bottom:0.5rem;
+    float:right;
+}
+.box.side.big
+{
+    width:400px;
+}
+.box.side
+{
+    margin-left:0.5rem;
+}
+.box.side.left
+{
+    margin-right:0.5rem;
+}
+
+.box img
+{
+    max-width:100%;
+    height:auto;
+}
+.nb 
+{
+	border:none !important;
+}
 
 /* For mobile screens */
 @media screen and (max-width: 600px) 
 {
+  	body
+  	{ font-size:16px;
+ 	 }
 		.navbar-toggler
 	{
 		display: inline-block;
@@ -383,11 +470,29 @@ footer {
 	}
 
 	.collapse:not(.show)
-{
-	display: none;
+	{
+		display: none;
+	}	
 }
 
+@media screen and (max-width: 500px) 
+{	
+
+	.side
+	{
+		
+		margin-left: 0rem;
+		margin: auto auto !important;
+		display: block;
+		float: none !important;
+	}
+	.side.box
+	{
+		width: 100%;
+	}
+
 }
+
 
 /* For prints */
 @media print
