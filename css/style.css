@@ -472,6 +472,37 @@ img.side
 	.collapse:not(.show)
 	{
 		display: none;
+	}
+	.main table.page-results thead
+	{
+		display: none;
+	}
+	.main table.page-results tr
+	{
+		display: flex;
+		border-bottom: 1px solid #ccc;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		flex-wrap: wrap;
+	}
+	.main table.page-results tr:last-child
+	{
+
+		border: none;
+
+
+	}
+	.main table.page-results tr td
+	{
+		width: 50%;
+		border: none;
+		font-size: 0.8em;
+
+	}
+	.main table.page-results tr td:first-child
+	{
+		width: 100%;
+		font-size: 1em;
 	}	
 }
 
