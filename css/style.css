@@ -345,6 +345,13 @@ img.nav-svg-icon {
 	display: inline-block;
 }
 
+/* Fixing scroll as the theme has a sticky header */
+.main h1, .main h2, .main h3, .main h4, .main div.section
+{
+	scroll-margin-top: 90px;
+	overflow: initial;
+}
+
 /*Boxes custom*/
 .box
 {   
