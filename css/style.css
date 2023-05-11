@@ -11,6 +11,7 @@ body {
 	font-size: 18px;
 	color:#222;
 	background-color: white;
+	font-family: "Noto Sans", Arial, "Noto Color Emoji";
 }
 
 .row, .col
@@ -400,10 +401,13 @@ img.nav-svg-icon {
 }
 
 /* Side boxes */
+.side
+{
+	float:right;
+}
 
 img.side
 {
-    float:right;
     margin:0.5rem 1rem;
     margin-right: 0rem;
 }
@@ -413,19 +417,16 @@ img.side
     width:300px;
     margin-top:0;
     margin-bottom:0.5rem;
-    float:right;
+    margin-left:0.5rem;
 }
 .box.side.big
 {
     width:400px;
 }
-.box.side
-{
-    margin-left:0.5rem;
-}
 .box.side.left
 {
     margin-right:0.5rem;
+    float: left;
 }
 
 .box img
@@ -511,16 +512,25 @@ img.side
 {	
 
 	.side
-	{
-		
+	{ 
 		margin-left: 0rem;
 		margin: auto auto !important;
 		display: block;
 		float: none !important;
+
+	}
+	.side.center
+	{
+		text-align: center;
 	}
 	.side.box
 	{
 		width: 100%;
+	}
+
+	.page .content
+	{
+		text-align: initial;
 	}
 
 }
