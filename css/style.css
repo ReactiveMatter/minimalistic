@@ -348,7 +348,7 @@ img.nav-svg-icon {
 /* Fixing scroll as the theme has a sticky header */
 .main h1, .main h2, .main h3, .main h4, .main div.section
 {
-	scroll-margin-top: 90px;
+	scroll-margin-top: 50px;
 	overflow: initial;
 }
 
