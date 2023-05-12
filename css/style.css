@@ -99,7 +99,9 @@ body {
 }
 
 .main img {
+
 	max-width: 100%;
+	height:auto;
 }
 
 
@@ -343,6 +345,12 @@ img.nav-svg-icon {
 	display: inline-block;
 }
 
+.detail-seperator
+{   padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
 /* Fixing scroll as the theme has a sticky header */
 .main h1, .main h2, .main h3, .main h4, .main div.section
 {
@@ -553,6 +561,11 @@ img.side
 @media print
 {
 	.navbar
+	{
+		display: none;
+	}
+
+	.no-print
 	{
 		display: none;
 	}
