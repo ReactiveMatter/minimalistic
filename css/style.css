@@ -178,6 +178,16 @@ th:last-child, td:last-child
 	font-weight: bold;
 }
 
+.main h1, .main h2, .main h3, .main h4
+{
+	margin-top:1.5rem;
+}
+
+.main h1.title
+{
+  margin-top: 0rem;
+}
+
 .page .details
 {
 	margin-bottom: 1rem;
@@ -343,12 +353,6 @@ img.nav-svg-icon {
 .collapse:not(.show)
 {
 	display: inline-block;
-}
-
-.detail-seperator
-{   padding-left: 5px;
-    padding-right: 5px;
-    font-weight: bold;
 }
 
 /* Fixing scroll as the theme has a sticky header */
